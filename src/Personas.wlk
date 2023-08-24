@@ -15,7 +15,7 @@ object bruno {
 	method peso() = peso
 
 	method recibirMasajes() {esFeliz = true}
-	method baniarse() {peso -= 500 
+	method baniarseConVapor() {peso -= 500 
 		tieneSed = true
 	}
 	method tomarAgua() {tieneSed = false}
@@ -33,10 +33,13 @@ object bruno {
 }
 
 object ramiro {
-	var nivelDeContractura
-	var tienePielGrasosa
-	method recibirMasajes() {nivelDeContractura -= 2}
-	method baniarse() {tienePielGrasosa = false}
+	var nivelDeContractura = 0
+	var tienePielGrasosa = false
+	method nivelDeContractura() = nivelDeContractura
+	method tienePielGrasosa() = tienePielGrasosa
+	
+	method recibirMasajes() {0.max(nivelDeContractura -= 2)}
+	method baniarseConVapor() {tienePielGrasosa = false}
 	method comerBicMac() {tienePielGrasosa = true}
 	method bajarALaFosa() {tienePielGrasosa = true 
 		nivelDeContractura += 1
