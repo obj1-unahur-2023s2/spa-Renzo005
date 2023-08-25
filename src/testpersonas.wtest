@@ -1,0 +1,19 @@
+import Personas.*
+
+test "ejemplo 1 de test: assert esta ok si assert.that(true)" {
+
+	assert.that(true)
+
+}
+
+test "ejemplo 2 de test: assert esta ok si assert.notThat(false)" {
+
+	assert.notThat(false)
+
+}
+
+test "ejemplo 3 de test: assert esta ok si assert.equals(5,5)" {
+
+	assert.equals(5,5)
+
+}

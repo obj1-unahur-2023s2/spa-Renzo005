@@ -1,0 +1,15 @@
+import Spa.*
+import Personas.*
+
+test "Spa atiende a olivia" {
+	spa.atender(olivia)
+	assert.equals(9,olivia.gradoDeConcentracion())
+
+}
+
+test "Spa atiende a ramiro"{
+	ramiro.diaDeTrabajo()
+	assert.that(ramiro.tienePielGrasosa())
+	spa.atender(ramiro)
+	assert.notThat(ramiro.tienePielGrasosa())
+}

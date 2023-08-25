@@ -4,7 +4,7 @@ object olivia {
 	
 	method recibirMasajes() {gradoDeConcentracion += 3}
 	method discutir() {gradoDeConcentracion -= 1}
-	//method baniarseConVapor() {}
+	method baniarseConVapor() {}
 }
 
 object bruno {
@@ -39,7 +39,7 @@ object ramiro {
 	method nivelDeContractura() = nivelDeContractura
 	method tienePielGrasosa() = tienePielGrasosa
 	
-	method recibirMasajes() {0.max(nivelDeContractura -= 2)}
+	method recibirMasajes() {(self.nivelDeContractura() - 2).max(0)}
 	method baniarseConVapor() {tienePielGrasosa = false}
 	method comerBicMac() {tienePielGrasosa = true}
 	method bajarALaFosa() {tienePielGrasosa = true 
