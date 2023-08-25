@@ -1,9 +1,10 @@
 object olivia {
 	var gradoDeConcentracion = 6
+	method gradoDeConcentracion () = gradoDeConcentracion
 	
 	method recibirMasajes() {gradoDeConcentracion += 3}
 	method discutir() {gradoDeConcentracion -= 1}
-	method gradoDeConcentracion () = gradoDeConcentracion
+	//method baniarseConVapor() {}
 }
 
 object bruno {
